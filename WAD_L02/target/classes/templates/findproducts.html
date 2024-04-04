@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Products</title>
+</head>
+<body>
+<form th:action="@{/products/find}" method="post">
+    <input type="text" name="category" placeholder="Category">
+    <input type="text" name="minPrice" placeholder="Min Price">
+    <input type="text" name="maxPrice" placeholder="Max Price">
+    <input type="submit" value="Find Products">
+</form>
+</body>
+</html>
