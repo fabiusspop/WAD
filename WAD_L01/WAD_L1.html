@@ -1,0 +1,74 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<link rel="stylesheet" href="/WAD_L1/"/></head>
+
+<body>
+<div class=img>
+
+  <img src="liv.jpg" width=150 height=150 style="display: inline-block" />
+  <h1 style="display: inline-block">LIVERPOOL FC SUBSCRIPTION</h1>
+</div>
+<div class="menu">
+
+  <a href="#home">Home</a>&emsp;
+  <a href="#register">Register</a>&emsp;
+  <a href="#contact">Contact</a>&emsp;
+</div>
+<form name="form1" action="#" id="form">
+	<p><strong>Registration form</strong></p>
+  <p>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+  </p>
+   <p>
+    <label for="username">Username</label>
+    <input type="text" id="uname" name="uname" required>
+  </p>
+<p>
+    <label for="pass">Password</label>
+    <input type="password" id="password" name="pass" required>
+</p>
+<p>
+    <label for="pass">Repeat password</label>
+    <input type="password" id="password_repeat" name="pass" required>
+</p>
+<p>
+    <label for="t2">Email</label>
+    <input type="email" id="email" name="email" required>
+  </p>
+ <p>Gender:
+<input name="gender" value="male" required type="radio"> Male
+<input name="gender" value="female" required type="radio"> Female
+</p>
+  <p>
+<label for="phone">Telephone</label>
+<input type="tel" id="phone" name="phone" maxlength=10  required>
+
+</p>
+    <label for="t1">Country<span aria-label="required"></span></label>
+    <input type="text" id="t1" name="country" list="l1" required>
+    <datalist id="l1">
+      <option>Romania</option>
+	  <option>Moldova</option>
+      <option>Hungary</option>
+
+    </datalist>
+  </p>
+  <p>
+	<label>Subscribe to maillist</label>
+      <input type="checkbox" checked="checked" name="subscribe"> 
+    
+</p>
+  <p>
+	<input type="submit" name="validate" value="Submit">
+	<button>Reset</button>
+  </p>
+  
+</div>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
