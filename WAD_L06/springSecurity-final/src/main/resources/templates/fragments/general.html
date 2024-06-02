@@ -1,0 +1,18 @@
+<div th:fragment="top">
+    <div class="header">
+        <img th:src="@{/images/companyLogo.jpg}" width="100px"/>
+        <span class="header-text">COMPANY NAME</span>
+    </div>
+    <nav>
+        <a href="/" th:if="${#authorization.expression('isAuthenticated()')}">Home</a>
+        <a href="/products" th:if="${#authorization.expression('isAuthenticated()')}">Products</a>
+        <a href="/admin" th:if="${#authorization.expression('hasRole(''ADMIN'')')}">Admin</a>
+        <a href="/logout" th:if="${#authorization.expression('isAuthenticated()')}">Logout</a>
+        <a href="/cart" th:if="${#authorization.expression('isAuthenticated()')}">See cart</a>
+        <a href="/profile" th:if="${#authorization.expression('isAuthenticated()')}">Profile</a>
+        <a href="/login" th:if="${#authorization.expression('!isAuthenticated()')}">Login</a>
+        <a href="/register" th:if="${#authorization.expression('!isAuthenticated()')}">Register</a>
+    </nav>
+  </div>
+  
+  
